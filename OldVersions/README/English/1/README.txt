@@ -1,295 +1,405 @@
 
 ***
 
-# <projectName>
-
-![{Project icon} This image failed to load. It may be due to the file not being reached, or a general error. Reload the page to fix a possible general error.](Image.svg)
-
-# By:
-
-![{Developer name} This image failed to load. It may be due to the file not being reached, or a general error. Reload the page to fix a possible general error.](Image2.svg)
-
-### Top
-
-# `README.md`
+# Fork styleguide
 
 ***
 
-## Read this article in a different language
+This is the styleguide for the way Sean Patrick Myrick (@seanpm2001/@seanwallawalla) does Git/GitHub forks. This guide predominantly covers the GitHub style.
 
-[ar عربى](README_AR.md) [zh-t 中國傳統的）](README_ZH-T.md)[**en-us**](README.md) [fr français](README_FR.md) [de Deutsch](README_DE.md) [EO Esperanto](README_EO.md)  [ja 日本語](README_JA.md) [ko-south 韓國語](README_KO_SOUTH.md) [pl polski](README_PL.md) [ru русский](README_RU.md) [es en español](README_ES.md)
+# Prerequisites for reading
 
-Translations in languages other than English are machine translated and are not yet accurate. No errors have been fixed yet as of March 21st 2021. Please report translation errors [here](https://github.com/seanpm2001/<repoName>/issues/). Make sure to backup your correction with sources and guide me, as I don't know languages other than English well (I plan on getting a translator eventually) please cite [wiktionary](https://en.wiktionary.org) and other sources in your report. Failing to do so will result in a rejection of the correction being published.
-
-***
-
-# Index
-
-[00.0 - Top](#Top)
-
-> [00.1 - Title](#<projectName>)
-
-> [00.2 - Read this article in a different language](#Read-this-article-in-a-different-language)
-
-> [00.3 - Index](#Index)
-
-[01.0 - Description](#RepositoryName)
-
-[02.0 - About](#About)
-
-[03.0 - Wiki](#Wiki)
-
-[04.0 - Version history](#Version-history)
-
-[05.0 - Software status](#Software-status)
-
-[06.0 - Sponsor info](#Sponsor-info)
-
-[07.0 - Contributers](#Contributers)
-
-[08.0 - Issues](#Issues)
-
-> [08.1 - Current issues](#Current-issues)
-
-> [08.2 - Past issues](#Past-issues)
-
-> [08.3 - Past pull requests](#Past-pull-requests)
-
-> [08.4 - Active pull requests](#Active-pull-requests)
-
-[09.0 - Resources](#Resources)
-
-[10.0 - Contributing](#Contributing)
-
-[11.0 - About README](#About-README)
-
-[12.0 - README Version history](#README-version-history)
-
-[13.0 - Footer](#You-have-reached-the-end-of-the-README-file)
-
-> [13.1 - End of file](#EOF)
+- Basic knowledge of Git or GitHub
+- Medium knowledge of English
+- Basic understanding of Seanpm2001 and Seanpm2001 projects
+- 18 to 25 minutes of available time
 
 ***
 
-# <repoName>
-<repo_description>
+# Table of contents
+
+There are 3 chapters. The general chapter is an overview of all of the rules and conditions that apply to all accounts. Chapter 2 is for forks to @seanpm2001 only, while chapter 3 is for forks to @seanwallawalla only.
+
+**Chapter 1 – forking (general)**
+
+- Why fork?
+- Name rules
+- - .github rule
+- - .github.io rule
+- - .github.com rule
+- - .com rule
+- - .net rule
+- - DotNET rule
+- - Other website repository name rules
+-  Capitalization rules
+- - CamelCase and hyphen-case rules
+- - Capitalize Every Word rule
+- - LIBraries rule
+- - Usernames
+- Cannot fork rules
+- - Cannot fork a fork rule
+- - Cannot fork an empty repository rule
+- - Cannot easily fork an archived repository, but still done rule
+- Don't copy the master branch only
+- When GitHub deletes users who were forked from, classic times (stays a forked repository) and modern times (turned into source repository)
+- Star and watch
+- Almost all forks are unmodified
+- `<username>_<repository-name>`
+- Underscore problem (when they are in the original name)
+- License disagreements
+- When to clone
+- Google, Amazon, and other enemy forks
+- Template repositories
+- DCO signoff
+- LFS objects
+- Mirrors
+- Dead links
+- Taking inspiration and learning
+- As a warm-up exercise
+- GitHub static content dying
+- Leaving in spelling errors (it isn't my job to fix them)
+- Rate of forking
+- GitHub no longer counts forks as commits (2023.09.19)
+- Preservation
+- Offline archive
+- Deleted contents in git history of forks
+
+**Chapter 2 – Forking to Seanpm2001**
+
+- Logging forks into data files
+- Gathering forks
+- Exceptions for what to fork
+- Sanctions
+- Fork gather tunneling and rabbitholes
+- Following users before forking
+- Organization fork process
+- Prioritizing forks of already-starred, but not forked repositories
+- Prioritizing forks of already-forked (by one of my former organizations) but not forked by my main account repositories
+- When forks are modified
+
+**Chapter 3 – Forking to SeanWallaWalla**
+
+- Keep the name the same
+- Fork once a day
+- How forks were previously logged into data files
+- How forks are now logged into data files
+- Holding off forks for vacation times
+- Forking non-Seanpm2001 repositories
+- Going back to fork once-private repositories
+- Why fork Seanpm2001 repositories
+- Scope file
+- Note file
 
 ***
 
-## About
+## Forking (general)
 
-See above. <extendedRepoDescription>
+This is the guide for general forking information.
+
+### Why fork?
+
+Repositories are forked as they are discovered via the archive rule. Every repository that I come across is forked. Additionally, when an organization is present, all organization repositories are included, and additionally, the source of their forks is also forked, which can lead to a rabbit-hole of organizations being covered.
+
+### Name rules
+
+There are several rules for naming forked repositories.
+
+#### .github rule
+
+Repositories with only the name `.github` don’t have the underscore rule, they will be named as `username.github`
+
+#### .github.io rule
+
+Repositories with the `username.github.io` name scheme are not renamed at all. Note that the older `username.github.com` naming scheme does not apply to this rule. See below
+
+#### .github.com rule
+
+Repositories with the `username.github.com` name scheme are renamed as `username_username.github.com`
+
+#### .com rule
+
+Repositories with the `username.com` / `name.com` name scheme are renamed as `username_username.com` or `username_name.com`
+
+#### .net rule
+
+Repositories with the `username.net` / `name.net` name scheme are renamed as `username_username.net` or `username_name.net` just like .com and .org URLs, unless it is particularly noted that Microsoft Dot NET is in use.
+
+#### DotNET rule
+
+If a repository ends in `dotnet` or consists only of `dotnet` the repository is renamed as `username_projectname_dotNET`
+
+#### Other website repository name rules
+
+There currently aren’t any other website repository name rules.
+
+#### Capitalization rules
+
+These are the rules for capitalizing repository names.
+
+##### CamelCase and hyphen-case rules
+
+CamelCase is most common in pre-existing names, but hyphen case is used to separate existing words over the usage of an underscore (unless it is in the repository name already, more on this later in the document)
+
+##### MacOS, iOS, and other name rules
+
+MacOS, iOS and some other names have special capitalization rules
+
+macos → MacOS
+
+ios → iOS
+
+ipados → iPadOS
+
+reactos → ReactOS
+
+iot → IoT
+
+No other examples listed.
+
+##### Capitalize Every Word rule
+
+In forked repository names, every word has its first letter capitalized, with the exception of brand names like iOS and iPadOS 
+
+##### LIBraries rule
+
+The word Libraries is usually capitalized as LIBraries as part of my effort to normalize people to the word LIB meaning library, a form of learning through osmosis.
+
+##### Usernames
+
+I try to enter usernames according to how they are spelled, or how the user says they spelled. They are commonly copy and pasted to prevent errors. If no spelling guide is found, I will either guess, or only capitalize the first letter of the username, or (if it starts with a number or hyphen) capitalize every letter.
+
+### Cannot fork rules
+
+These are the rules for what I cannot fork.
+
+#### Cannot fork a fork rule
+
+I cannot fork a forked repository, as this comes into conflict with the source repository. If I ever fork and star the source repository, I will be unable to fork any of its forks. So when repositories are came across are merely forks, I try to go for the source only. In some cases, if I find the repository significant enough, I will clone the repository as a source repository to my account, with the same forked repository name rules.
+
+#### Cannot fork an empty repository rule
+
+I cannot fork empty repositories, as GitHub doesn’t allow it. If I was able to, empty repositories would still be forked, as there is a repository name involved. Empty repositories are usually just logged as empty.
+
+#### Cannot easily fork an archived repository, but still done rule
+
+I am unable to easily fork archived repositories, but I still do so. Usually, I would just go to create a new file, and have the fork created this way. Since you can’t do that in an archived repository, I instead press the fork button, turn off “Copy the master branch only” and then continue the fork process.
+
+### Don't copy the master branch only
+
+GitHub has an option to copy only the master branch. After how many times I have deselected this, and for the 14+ years this wasn’t a thing, it should register that I don’t want to copy only the master/main branch.
+
+### When GitHub deletes users who were forked from, classic times (stays a forked repository) and modern times (turned into source repository)
+
+In the classic GitHub times (before 2022) when GitHub deletes a user who you forked a repository from, you could still give credit to the user, because it would still show where you forked it from, even though this would be a dead link, it was still very helpful. Unfortunately, in 2022, this ability was removed, and now forked repositories are converted to source repositories when a user is deleted.
+
+### Star and watch
+
+All repositories that are forked are also starred and subscribed to (watched) I try to star and fork on the same day, so that when I come across the repository later, I will know it has been forked. This forking rule hasn’t always been present, and I commonly have to go back and fork repositories that were starred, but not forked. In my star notes, a comment is added: `//// ALREADY STARRED` and in my fork notes, this comment is added: `///// BUT NOT FORKED UNTIL TODAY`
+
+### Almost all forks are unmodified
+
+Almost all forks I create are never modified. There are rare cases in which I will work on a fork and submit a pull request/keep working on my fork, but this happens less than 0.1% of the time.
+
+### `<username>_<repository-name>`
+
+I use underscores to distinguish a username from a repository name. The standard name format is `<username>_<repository-name>`
+
+### Underscore problem (when they are in the original name)
+
+As said above, I use underscores for distinguishing names. Unfortunately, some repositories already use underscores in their names, so I have to include existing underscores. To continue distinguishing, just remember that everything after the first underscore is the repository name.
+
+### License disagreements
+
+I fork repositories regardless of license, even if it is with a license I have strong disagreements with (such as the Apache license) I prefer the GPL3, GPL2, and Vim licenses, but exceptions had to be made to fit with the archive rule.
+
+### When to clone
+
+Repositories are only cloned when a fork is notable enough to be separated, and when the source cannot be found.
+
+### Google, Amazon, and other enemy forks
+
+I commonly fork the repositories of my enemies (Google, Amazon, Facebook, etc.) it does not mean that I support them. It is just part of the archive process.
+
+### Template repositories
+
+Template repositories are forked, and their status as a template is not disabled.
+
+### DCO signoff
+
+Repositories with a DCO signoff rule are still forked, and this rule isn’t disabled.
+
+### LFS objects
+
+Repositories with LFS objects are still forked.
+
+### Mirrors
+
+I fork mirrored repositories when they are in my queue.
+
+### Dead links
+
+When dead links are found, they are added to a dead link list.
+
+### Taking inspiration and learning
+
+When doing the forking process daily, I take inspiration from the repositories I fork, and learn things from them.
+
+### As a warm-up exercise
+
+The forks are commonly done as a daily warm-up exercise before I get to my actual work. It is a routine, and part of my work, but it still helps me get going.
+
+### GitHub static content dying
+
+GitHub static content dies over time, but unfortunately, I don’t have the time to save it.
+
+### Leaving in spelling errors (it isn't my job to fix them)
+
+I leave in spelling errors in the names of forked repositories for preservation purposes. It isn’t my job to fix them, but nonetheless, errors are kept.
+
+### Rate of forking
+
+My rate of forking has become consistent since some time in 2021 or 2022. I try to create 25 repositories per day, so usually 17 to 25 forks are created (so there is room for 0-8 source repositories) Starting 2023, September 10th, I have been creating 100 repositories per day, meaning I create 92 to 100 forks per day (with room for an additional 0-8 source repositories)
+
+### GitHub no longer counts forks as commits (2023.09.19)
+
+As of 2023, September 19th, GitHub stopped counting my forks as commits per day on the commit calendar. I feel this was due to the huge increase in daily forks.
+
+### Preservation
+
+Forks are done for preservation purposes.
+
+### Offline archive
+
+Forks are done to create a sizable, offline, searchable database of Git content Sean has seen. It is a part of the Seanpm2001 Life Archive project.
+
+### Deleted contents in git history of forks
+
+Unfortunately, a lot of developers have the strategy of deleting all of the contents in an old repository when transitioning to a new one, instead of simply archiving it and leaving a note. Luckily, with Git file history, almost all of the repository is still there (with the exception of large files and binary files, such as images, videos, audio, rich documents, etc.)
 
 ***
 
-## Wiki
+## Forking to Seanpm2001
 
-[Click/tap here to view this projects Wiki](https://github.com/seanpm2001/<repoName>/wiki)
+These are my rules for forking repositories to the @seanpm2001 GitHub account. In the archive process, this is known as GitHub forks part A.
 
-If the project has been forked, the Wiki was likely removed. Luckily, I include an embedded version. You can view it [here](/External/ProjectWiki/).
+### Logging forks into data files
 
-***
+Forks are logged into data files, which became a common practice in mid 2022. Forks are logged in URLL format. The format is
 
-## Sponsor info
+`seanpm2001/original-fork-name -> seanpm2001/User42_Original-Fork-Name`
 
-![SponsorButton.png](SponsorButton.png)
+The arrow is important. In some instances, there are multiple arrows for a single fork entry, as I make errors sometimes, and have to correct them.
 
-You can sponsor this project if you like, but please specify what you want to donate to. [See the funds you can donate to here](https://github.com/seanpm2001/Sponsor-info/tree/main/For-sponsors)
+`seanpm2001/original-fork-name -> seanpm2001/Usr42_Orignal-fork-Name -> seanpm2001/User42_Original-Fork-Name`
 
-You can view other sponsor info [here](https://github.com/seanpm2001/Sponsor-info/)
+This is the standard process for repository fork data files.
 
-Try it out! The sponsor button is right up next to the watch/unwatch button.
+### Gathering forks
 
-***
+To gather forks to work with over days, weeks, months, and years, entire organizations are searched, and random repositories are discovered and logged into a secret file known as PIN which is a personal blockchain of notes (not a cryptocurrency blockchain, just a very large text file that is full of dated entries, and updated frequently) repositories from users are usually put into a miscellaneous queue, while organizations are added to a dated queue, with 17-100 entries listed per day. When the time comes, they are all opened, then starred, forked, renamed, and logged. This is a process that is done on a daily basis.
 
-## Version history
+### Exceptions for what to fork
 
-**Version history currently unavailable**
+There are exceptions for what to fork. The exceptions are:
 
-**No other versions listed**
+- Empty repositories
+- Private/deleted repositories
+- Forked repositories
+- Sanctioned repositories
 
-***
+### Sanctions
 
-## Software status
+Some organizations may be sanctioned before information on them can be gathered. Currently, there are only 2 sanctioned organizations: Alibaba and Bilibili. These were sanctioned due to special aid being given to an aggressor in a war (giving support to Russia in the 2022 Russian Invasion of Ukraine) they were already in a bad spot to begin with (Chinese SaaSS, personal data harvesting, spying, and censorship)
 
-All of my works are free some restrictions. DRM (**D**igital **R**estrictions **M**anagement) is not present in any of my works.
+### Fork gather tunneling and rabbitholes
 
-![DRM-free_label.en.svg](DRM-free_label.en.svg)
+Forks are gathered organization by organization. When an organization has a fork that is of another organization, the path will continue, and that organization will be gathered as well. This can easily lead to rabbit holes, as multiple organizations will be documented, and it will go from organization to organization, sometimes leading to 100+ organizations being documented from a single organization.
 
-This sticker is supported by the Free Software Foundation. I never intend to include DRM in my works.
+### Following users before forking
 
-I am ussing the abbreviation "Digital Restrictions Management" instead of the more known "Digital Rights Management" as the common way of addressing it is false, there are no rights with DRM. The spelling "Digital Restrictions Management" is more accurate, and is supported by [Richard M. Stallman (RMS)](https://en.wikipedia.org/wiki/Richard_Stallman) and the [Free Software Foundation (FSF)](https://en.wikipedia.org/wiki/Free_Software_Foundation)
+Users and organizations are always followed before forking their repositories. If this isn’t done, they will be followed immediately after. This is a newer rule from mid 2022, and some users from projects that were starred and forked prior to 2022 are still being discovered again.
 
-This section is used to raise awareness for the problems with DRM, and also to protest it. DRM is defective by design and is a major threat to all computer users and software freedom.
+### Organization fork process
 
-Image credit: [defectivebydesign.org/drm-free/...](https://www.defectivebydesign.org/drm-free/how-to-use-label)
+The organization fork process goes as follows
 
-***
+- Find an organization
+- Gather its repository links
+- Schedule it into a queue
+- Wait for the day to come
+- Star, fork, and log the repositories 
 
-## Contributers
+### Going back to fork starred repositories
 
-Currently, I am the only contributer. Contributing is allowed, as long as you follow the rules of the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+I have to go back and fork repositories that were previously starred, but not forked.
 
-> * 1. [seanpm2001](https://github.com/seanpm2001/) - x commits (As of DoW, Month, DoM, Yr at ##:## a/pm)
+### Prioritizing forks of already-starred, but not forked repositories
 
-> * 2. No other contributers.
+I have been prioritizing forks of already-starred (but not forked) repositories as an extra task to do whenever comfortable and possible (when there is room available)
 
-***
+### Prioritizing forks of already-forked (by one of my former organizations) but not forked by my main account repositories
 
-## Issues
+Most currently starred, but not forked repositories are related to my former GitHub organizations, where the fork is still retained (but just returns 404) these are commonly discovered, and are prioritized in the miscellaneous queue.
 
-### Current issues
+### When forks are modified
+When to-be-forked repositories are modified before I get to them, and something bad happens (source code rewrite, file deletion) they are still forked.
 
-* None at the moment
-
-* No other current issues
-
-If the repository has been forked, issues likely have been removed. Luckily I keep an archive of certain images [here](/.github/Issues/)
-
-[Read the privacy policy on issue archival here](/.github/Issues/README.md)
-
-**TL;DR**
-
-I archive my own issues. Your issue won't be archived unless you request it to be archived.
-
-### Past issues
-
-* None at the moment
-
-* No other past issues
-
-If the repository has been forked, issues likely have been removed. Luckily I keep an archive of certain images [here](/.github/Issues/)
-
-[Read the privacy policy on issue archival here](/.github/Issues/README.md)
-
-**TL;DR**
-
-I archive my own issues. Your issue won't be archived unless you request it to be archived.
-
-### Past pull requests
-
-* None at the moment
-
-* No other past pull requests
-
-If the repository has been forked, issues likely have been removed. Luckily I keep an archive of certain images [here](/.github/Issues/)
-
-[Read the privacy policy on issue archival here](/.github/Issues/README.md)
-
-**TL;DR**
-
-I archive my own issues. Your issue won't be archived unless you request it to be archived.
-
-### Active pull requests
-
-* None at the moment
-
-* No other active pull requests
-
-If the repository has been forked, issues likely have been removed. Luckily I keep an archive of certain images [here](/.github/Issues/)
-
-[Read the privacy policy on issue archival here](/.github/Issues/README.md)
-
-**TL;DR**
-
-I archive my own issues. Your issue won't be archived unless you request it to be archived.
+I occasionally modify forked repositories for use in pull requests, or for general development (extremely rare)
 
 ***
 
-## Resources
+## Forking to SeanWallaWalla
 
-Here are some other resources for this project:
+These are my rules for forking repositories to the @seanwallawalla GitHub account. In the archive process, this is known as GitHub forks part B.
 
-[Project language file](PROJECT_LANG.<fileExtensionForProgrammingLanguage>)
+### Keep the name the same
 
-[Join the discussion on GitHub](https://github.com/seanpm2001/<repoName>/discussions)
+The names of repositories of seanpm2001 repositories are kept the same, and are logged as just `seanwallawalla/forkname`
 
-No other resources at the moment.
+### Fork once a day
 
-***
+Seanpm2001 repositories are forked once per day. I create new repositories on @seanpm2001, and fork them to @seanwallawalla the next day.
 
-## Contributing
+### How forks were previously logged into data files
 
-Contributing is allowed for this project, as long as you follow the rules of the `CONTRIBUTING.md` file.
+Forks were previously logged into a separate data file (the note file)
 
-[Click/tap here to view the contributing rules for this project](CONTRIBUTING.md)
+### How forks are now logged into data files
 
-***
+Forks are logged into the same data file as the Seanpm2001 fork file. They are in a section near the bottom labeled SeanWallaWalla.
 
-## About README
+### Holding off forks for vacation times
 
-File type: `Markdown (*.md)`
+Some forks are held off from normal development days to be added to a vacation queue. On vacations, I try to keep the forks going on a daily basis, and I begin to dig into this queue, at a slower rate (normally 2-4 repositories per day)
 
-File version: `0.1 (Sunday, March 21st 2021 at 7:50 pm)`
+Before going on vacation, I purposefully hold off some daily forks to put into a vacation queue, as I cannot create new repositories on vacations.
 
-Line count: `0,296`
+### Forking non-Seanpm2001 repositories
 
-***
+In the beginning, I used to sometimes fork non-Seanp2001 repositories, as to populate my alt account, and promote other projects. This is done extremely rarely now.
 
-## README version history
+### Going back to fork once-private repositories
 
-Version 0.1 (Sunday, March 21st 2021 at 7:50 pm)
+Some repositories are created as private repositories, and are made public later on. I occasionally go back and fork projects after I make them public again.
 
-> Changes:
+### Why fork Seanpm2001 repositories
 
-> * Started the file
+Seanpm2001 repositories are forked, as a way of providing a backup. The motivation to fork my repositories daily started in 2022 August, after the suspension of my main account was listed, which lasted nearly a month. Seanpm2001 repositories are forked to Seanwallawalla, so that if my main account is suspended, there will still be a way to view my projects without going to another site.
 
-> * Added the title section
+### Scope file
 
-> * Added the index
+I used to maintain a scope file for Seanpm2001 projects, built off of data from SeanWallaWalla forks. Currently, this file is unmaintained.
 
-> * Added the about section
+### Note file
 
-> * Added the Wiki section
-
-> * Added the version history section
-
-> * Added the issues section.
-
-> * Added the past issues section
-
-> * Added the past pull requests section
-
-> * Added the active pull requests section
-
-> * Added the contributors section
-
-> * Added the contributing section
-
-> * Added the about README section
-
-> * Added the README version history section
-
-> * Added the resources section
-
-> * Added a software status section, with a DRM free sticker and message
-
-> * Added the sponsor info section
-
-> * No other changes in version 0.1
-
-Version 1 (Coming soon)
-
-> Changes:
-
-> * Coming soon
-
-> * No other changes in version 1
-
-Version 2 (Coming soon)
-
-> Changes:
-
-> * Coming soon
-
-> * No other changes in version 2
+I used to maintain a note file for SeanWallaWalla forks, but it stopped daily development after a severe kernel panic in 2023 June. The file contained information on forks, what would be forked next, and information about them. This is now maintained in the PIN file.
 
 ***
 
-### You have reached the end of the README file
+# File info
 
-[Back to top](#Top) [Exit](https://github.com)
+**Modified from** [`Fork styleguide V3`](/Docs/Fork-Styleguide/V3/) to transition to Markdown, fix a typo, and format for README usage.
 
-### EOF
+**File version:** `1 (2023, Saturday, November 11th at 9:05 pm PST)`
 
 ***
